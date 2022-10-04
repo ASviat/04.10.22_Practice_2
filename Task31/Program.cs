@@ -22,8 +22,8 @@ void Sum(int [] arar)
     int sumNegative=default;
     for (int i=0; i<12;i++)
     {
-        if (arar[i]>0) sumPozitive=sumPozitive+array[i];
-        else sumNegative=sumNegative+array[i];
+        if (arar[i]>0) sumPozitive+=array[i];
+        else sumNegative+=array[i];
     }
     Console.WriteLine($"Сумма положительных = {sumPozitive}");
     Console.WriteLine($"Сумма отрицательных = {sumNegative}");
