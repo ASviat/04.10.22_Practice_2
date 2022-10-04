@@ -3,15 +3,19 @@
 int[] MakeArray(int []arr)
 {
     Random rnd=new Random();
+    Console.Write("{ ");
     for (int i=0;i<12;i++)
     {
         arr[i]=rnd.Next(-9,10);
         Console.Write($"{arr[i]} ");
-    }
+    } 
+    Console.Write("}");
     return arr;
+   
 }
-int[] arrray= MakeArray(array);
 
+int[] arrray= MakeArray(array);
+Console.WriteLine();
 void Sum(int [] arar)
 {
     int sumPozitive=default;
